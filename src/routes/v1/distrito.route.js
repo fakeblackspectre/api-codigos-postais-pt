@@ -5,6 +5,6 @@ const auth = require('../../middlewares/auth');
 const router = express.Router();
 
 router.route('/').get(auth('getDistritos'), distritoController.getDistritos);
-// router.route('/:codigo').get(distritoController.getDistrito);
+router.route('/distrito/').get(distritoController.getDistrito);
 
 module.exports = router;

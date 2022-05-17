@@ -9,7 +9,7 @@ const getDistritos = catchAsync(async (req, res) => {
 });
 
 const getDistrito = catchAsync(async (req, res) => {
-  const distrito = await distritoService.getDistritoByCodigo(req.params.codigo);
+  const distrito = await distritoService.getDistritoByCodigo(req.query.cod_distrito);
   if (!distrito) {
     throw new ApiError(httpStatus.NOT_FOUND, 'Distrito not found');
   }

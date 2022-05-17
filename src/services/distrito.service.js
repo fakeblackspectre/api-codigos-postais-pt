@@ -11,17 +11,18 @@ const { Distrito } = require('../models');
  */
 const queryDistritos = async () => {
   const distritos = await Distrito.find({});
+
   return distritos;
 };
 
 /**
  * Get distrito by cod_distrito
- * @param {String} codigo
+ * @param {String} codDistrito
  * @returns {Promise<Distrito>}
  */
-const getDistritoByCodigo = async (codigo) => {
+const getDistritoByCodigo = async (codDistrito) => {
   return Distrito.find({
-    cod_distrito: codigo,
+    cod_distrito: codDistrito,
   });
 };
 

@@ -1,14 +1,19 @@
 const mongoose = require('mongoose');
 const { toJSON, paginate } = require('./plugins');
 
-const distritoSchema = mongoose.Schema(
+const concelhoSchema = mongoose.Schema(
   {
     cod_distrito: {
       type: String,
       required: true,
       trim: true,
     },
-    nome_distrito: {
+    cod_concelho: {
+      type: String,
+      required: true,
+      trim: true,
+    },
+    nome_concelho: {
       type: String,
       required: true,
       trim: true,
@@ -20,12 +25,12 @@ const distritoSchema = mongoose.Schema(
 );
 
 // add plugin that converts mongoose to json
-distritoSchema.plugin(toJSON);
-distritoSchema.plugin(paginate);
+concelhoSchema.plugin(toJSON);
+concelhoSchema.plugin(paginate);
 
 /**
  * @typedef Distrito
  */
-const Distrito = mongoose.model('Distrito', distritoSchema);
+const Concelho = mongoose.model('Concelho', concelhoSchema);
 
-module.exports = Distrito;
+module.exports = Concelho;
