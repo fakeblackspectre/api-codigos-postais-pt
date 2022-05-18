@@ -9,8 +9,8 @@ const { Distrito } = require('../models');
  * @param {number} [options.page] - Current page (default = 1)
  * @returns {Promise<QueryResult>}
  */
-const queryDistritos = async () => {
-  const distritos = await Distrito.find({});
+const queryDistritos = async (filter, options) => {
+  const distritos = await Distrito.paginate(filter, options);
 
   return distritos;
 };

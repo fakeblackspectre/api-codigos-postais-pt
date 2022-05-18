@@ -9,8 +9,8 @@ const { Concelho } = require('../models');
  * @param {number} [options.page] - Current page (default = 1)
  * @returns {Promise<QueryResult>}
  */
-const queryConcelhos = async () => {
-  const concelhos = await Concelho.find({});
+const queryConcelhos = async (filter, options) => {
+  const concelhos = await Concelho.paginate(filter, options);
 
   return concelhos;
 };
