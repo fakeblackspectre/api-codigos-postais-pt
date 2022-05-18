@@ -7,6 +7,7 @@ const concelhoSchema = mongoose.Schema(
       type: String,
       required: true,
       trim: true,
+      select: false,
     },
     cod_concelho: {
       type: String,
@@ -18,6 +19,20 @@ const concelhoSchema = mongoose.Schema(
       required: true,
       trim: true,
     },
+    distrito: [
+      {
+        cod_distrito: {
+          type: String,
+          required: true,
+          trim: true,
+        },
+        nome_distrito: {
+          type: String,
+          required: true,
+          trim: true,
+        },
+      },
+    ],
   },
   {
     timestamps: true,

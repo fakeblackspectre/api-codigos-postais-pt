@@ -13,6 +13,16 @@ const queryConcelhos = async (filter, options) => {
   const concelhos = await Concelho.paginate(filter, options);
 
   return concelhos;
+
+  // const concelhos = await Concelho.find({});
+
+  // concelhos.forEach(async (c) => {
+  //   const distrito = await Distrito.find({ cod_distrito: c.cod_distrito });
+
+  //   await Concelho.updateOne({ _id: c._id }, { $set: { distrito: distrito[0] } });
+  // });
+
+  // return concelhos;
 };
 
 /**

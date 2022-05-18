@@ -1,5 +1,5 @@
 const allRoles = {
-  user: ['getDistritos', 'getConcelhos'],
+  user: ['getDistritos', 'getConcelhos', 'getCodigosPostais'],
   admin: ['getUsers', 'manageUsers', 'getDistritos'],
 };
 
