@@ -4,6 +4,7 @@ const userRoute = require('./user.route');
 const distritoRoute = require('./distrito.route');
 const concelhoRoute = require('./concelho.route');
 const codigoPostalRoute = require('./codigoPostal.route');
+const ruaRoute = require('./rua.route');
 const docsRoute = require('./docs.route');
 const config = require('../../config/config');
 
@@ -26,10 +27,6 @@ const defaultRoutes = [
     path: '/concelhos',
     route: concelhoRoute,
   },
-  {
-    path: '/codigos_postais',
-    route: codigoPostalRoute,
-  },
 ];
 
 const devRoutes = [
@@ -37,6 +34,14 @@ const devRoutes = [
   {
     path: '/docs',
     route: docsRoute,
+  },
+  {
+    path: '/codigos_postais',
+    route: codigoPostalRoute,
+  },
+  {
+    path: '/ruas',
+    route: ruaRoute,
   },
 ];
 

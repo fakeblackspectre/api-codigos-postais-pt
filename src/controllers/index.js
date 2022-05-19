@@ -3,3 +3,4 @@ module.exports.userController = require('./user.controller');
 module.exports.distritoController = require('./distrito.controller');
 module.exports.concelhoController = require('./concelho.controller');
 module.exports.codigoPostalController = require('./codigoPostal.controller');
+module.exports.ruaController = require('./rua.controller');

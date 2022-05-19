@@ -1,4 +1,5 @@
-const { CodigoPostal, Concelho, Distrito } = require('../models');
+/* eslint-disable no-restricted-syntax */
+const { CodigoPostal } = require('../models');
 
 /**
  * Query for codigos postais
@@ -17,11 +18,15 @@ const queryCodigosPostais = async (filter, options) => {
   // const codigosPostais = await CodigoPostal.find(filter);
 
   // for await (const c of codigosPostais) {
-  //   const distrito = await Distrito.find({ cod_distrito: c.cod_distrito });
+  //   const ruas = await Rua.find(
+  //     { num_cod_postal: c.num_cod_postal, ext_cod_postal: c.ext_cod_postal },
+  //     { nome_rua: 1, _id: 0 }
+  //   );
 
-  //   const concelho = await Concelho.find({ cod_distrito: c.cod_distrito, cod_concelho: c.cod_concelho });
-
-  //   await CodigoPostal.updateOne({ _id: c._id }, { $set: { distrito: distrito[0], concelho: concelho[0] } });
+  //   for await (const rua of ruas) {
+  //     await CodigoPostal.findOneAndUpdate({ _id: c._id }, { $push: { ruas: rua.nome_rua } });
+  //     console.log(c._id);
+  //   }
   // }
 
   // return codigosPostais;

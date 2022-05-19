@@ -118,6 +118,14 @@ const codigoPostalSchema = mongoose.Schema(
         },
       },
     ],
+    ruas: [
+      {
+        type: String,
+        required: false,
+        trim: true,
+        // select: false,
+      },
+    ],
   },
   {
     timestamps: true,
