@@ -28,10 +28,6 @@ const defaultRoutes = [
     route: concelhoRoute,
   },
   {
-    path: '/docs',
-    route: docsRoute,
-  },
-  {
     path: '/codigos_postais',
     route: codigoPostalRoute,
   },
@@ -43,18 +39,10 @@ const defaultRoutes = [
 
 const devRoutes = [
   // routes available only in development mode
-  // {
-  //   path: '/docs',
-  //   route: docsRoute,
-  // },
-  // {
-  //   path: '/codigos_postais',
-  //   route: codigoPostalRoute,
-  // },
-  // {
-  //   path: '/ruas',
-  //   route: ruaRoute,
-  // },
+  {
+    path: '/docs',
+    route: docsRoute,
+  },
 ];
 
 defaultRoutes.forEach((route) => {
