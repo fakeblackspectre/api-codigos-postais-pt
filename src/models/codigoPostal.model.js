@@ -7,13 +7,13 @@ const codigoPostalSchema = mongoose.Schema(
       type: String,
       required: true,
       trim: true,
-      // select: false,
+      select: false,
     },
     cod_concelho: {
       type: String,
       required: true,
       trim: true,
-      // select: false,
+      select: false,
     },
     cod_localidade: {
       type: String,
@@ -23,56 +23,6 @@ const codigoPostalSchema = mongoose.Schema(
     nome_localidade: {
       type: String,
       required: true,
-      trim: true,
-    },
-    cod_arteria: {
-      type: String,
-      required: false,
-      trim: true,
-    },
-    tipo_arteria: {
-      type: String,
-      required: false,
-      trim: true,
-    },
-    prep1: {
-      type: String,
-      required: false,
-      trim: true,
-    },
-    titulo_arteria: {
-      type: String,
-      required: false,
-      trim: true,
-    },
-    prep2: {
-      type: String,
-      required: false,
-      trim: true,
-    },
-    nome_arteria: {
-      type: String,
-      required: false,
-      trim: true,
-    },
-    local_arteria: {
-      type: String,
-      required: false,
-      trim: true,
-    },
-    troco: {
-      type: String,
-      required: false,
-      trim: true,
-    },
-    porta: {
-      type: String,
-      required: false,
-      trim: true,
-    },
-    cliente: {
-      type: String,
-      required: false,
       trim: true,
     },
     num_cod_postal: {
