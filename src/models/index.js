@@ -4,3 +4,4 @@ module.exports.Distrito = require('./distrito.model');
 module.exports.Concelho = require('./concelho.model');
 module.exports.CodigoPostal = require('./codigoPostal.model');
 module.exports.Rua = require('./rua.model');
+module.exports.Nif = require('./nif.model');

@@ -6,3 +6,4 @@ module.exports.distritoService = require('./distrito.service');
 module.exports.concelhoService = require('./concelho.service');
 module.exports.codigoPostalService = require('./codigoPostal.service');
 module.exports.ruaService = require('./rua.service');
+module.exports.nifService = require('./nif.service');
